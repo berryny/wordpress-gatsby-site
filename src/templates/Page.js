@@ -8,7 +8,6 @@ const PageTemplate = ({ data }) => (
   <Layout>
     <SEO
       title={data.wpPage.title}
-      description={data.wpPage.excerpt}
     />
 
     <Jumbotron fluid>

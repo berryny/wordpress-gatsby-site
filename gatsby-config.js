@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `The Pattersons`,
     description: `The Bronx Doc Film`,
+    siteUrl: `https://thepattersondocumentary.com`,
     author: `judi desire`,
     twitter: `@judidesire`
   },
