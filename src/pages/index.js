@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title={data.wpPage.title} description={data.site.siteMetadata.description} />
+    <SEO title={data.wpPage.title} />
 
     {/*<h1>{data.wpPage.title}</h1>*/}
     <div dangerouslySetInnerHTML={{ __html: data.wpPage.content }} />
@@ -23,13 +23,6 @@ export const query = graphql`
     uri
     title
     content
-    }
-    site {
-    id
-    siteMetadata {
-      description
-      title
-    }
     }
   }
 `

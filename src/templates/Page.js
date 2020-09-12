@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout.js"
 import SEO from "../components/seo"
+import { Container, Jumbotron } from 'react-bootstrap'
 
 const PageTemplate = ({ data }) => (
   <Layout>
@@ -9,7 +10,13 @@ const PageTemplate = ({ data }) => (
       title={data.wpPage.title}
       description={data.wpPage.excerpt}
     />
-    <h1>{data.wpPage.title}</h1>
+
+    <Jumbotron fluid>
+      <Container>
+        <h1>{data.wpPage.title}</h1>
+      </Container>
+    </Jumbotron>
+
     <div dangerouslySetInnerHTML={{ __html: data.wpPage.content }} />
   </Layout>
 )
