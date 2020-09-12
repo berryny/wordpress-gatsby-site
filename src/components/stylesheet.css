@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500,700&display=swap');
+
+body {
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  color: #444;
+  position: relative;
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: #444;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
